@@ -1,0 +1,964 @@
+/*
+    - Global Sections Style
+    - Header Style
+        - Navbar
+        - Slider
+    - Services Style
+    - Online Store Style
+    - Websites Style 
+    - Mobile Apps Style
+    - Graphic Desgin Style
+    - Our Price Style
+    - About Us Style
+    - Our Works Style
+    - Contact US Style
+    - Footer Style
+*/
+
+/* ========================================
+    Srtart Global Secntios Style ==================*/
+:root {
+    --mainColor: #4d88c0;
+    --white: #ffffff;
+    --gray: #888;
+    --black: #13253b;
+}
+body {
+    text-transform: capitalize;
+    position: relative;
+    font-family: "Cairo", sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+input,
+textarea {
+    outline-color: var(--mainColor);
+}
+.title-section .title {
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    display: inline-block;
+    z-index: 3;
+}
+.title-section .title::before {
+    position: absolute;
+    bottom: -15px;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--mainColor);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.title-toglle.title-section .title {
+    color: var(--white);
+}
+.title-toglle.title-section .title::before {
+    background-color: var(--white);
+}
+.navbar-toggler:focus,
+.modal-header .close:focus {
+    outline: none;
+}
+.fa-bars {
+    color: var(--mainColor);
+}
+.reload {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../images/load.gif") no-repeat center #000;
+}
+.upPage,
+.contact-icon {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 10;
+    color: var(--white);
+    background-color: var(--mainColor);
+    box-shadow: 0 0 5px 0 var(--mainColor);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.contact-icon {
+    background-color: #128c7e;
+    right: auto;
+    left: 25px;
+    bottom: 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 2em;
+    box-shadow: 0 0 10px 0 #128c7e;
+}
+.contact-icon a {
+    color: var(--white);
+}
+
+.tooltip-inner {
+    background-color: var(--mainColor);
+    box-shadow: 0 0 5px 0 var(--black);
+}
+.tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+.tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: var(--mainColor);
+}
+.modal.show {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+@media (max-width: 992px) {
+    .upPage {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .contact-icon {
+        left: 12px;
+    }
+}
+/* ========================================
+    End Global Secntios Style ==================*/
+
+/* ========================================
+    Srtart Header Style ==================*/
+.header {
+    position: relative;
+    background-image: url("../images/header/Group 203.png");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+/* Navbar */
+.navbar.fixed-top {
+    background: #fff;
+    box-shadow: 0 0 15px 0 var(--mainColor);
+}
+.header .navbar-brand .logo {
+    height: 55px;
+}
+.header .nav-item .nav-link {
+    color: var(--mainColor);
+}
+.header .nav-item .nav-link.send {
+    background-color: var(--mainColor);
+    color: var(--white);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.header .sochial .nav-item i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid transparent;
+    color: var(--mainColor);
+    background-color: var(--white);
+    font-size: 1.3em;
+    margin: 0 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: color 0.4s, background-color 0.4s;
+    -webkit-transition: color 0.4s, background-color 0.4s;
+    -moz-transition: color 0.4s, background-color 0.4s;
+    -ms-transition: color 0.4s, background-color 0.4s;
+    -o-transition: color 0.4s, background-color 0.4s;
+}
+.header .sochial .nav-item i:hover,
+.navbar.fixed-top .nav-item i {
+    color: var(--white);
+    background-color: var(--mainColor);
+}
+.navbar.fixed-top .nav-item i:hover {
+    color: var(--mainColor);
+    background-color: var(--white);
+    border: 1px solid var(--mainColor);
+}
+/* Slider Header */
+.content-header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.carousel {
+    height: 65vh;
+}
+
+.carousel-item .title-slider {
+    color: var(--mainColor);
+    font-weight: bold;
+    font-size: 3em;
+}
+.carousel-item p {
+    font-weight: bold;
+}
+.carousel-indicators {
+    left: auto;
+    bottom: 25px;
+}
+.carousel-indicators li {
+    background-color: var(--mainColor) !important;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 15px;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding-top: 50px;
+    }
+    .carousel-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        height: 100%;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 99;
+        background: #fff;
+        box-shadow: 0 0 15px 0 var(--mainColor);
+    }
+    .header .sochial {
+        margin: 10px 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content-header {
+        position: relative;
+        top: auto;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        text-align: center;
+    }
+    .carousel-item .title-slider {
+        font-size: 2em;
+        color: var(--black);
+    }
+    .carousel-item .img {
+        text-align: center;
+    }
+    .carousel {
+        height: 77vh;
+    }
+    .carousel-indicators {
+        right: 0;
+    }
+    .carousel-indicators li {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 425px) {
+    .carousel-item .img {
+        text-align: center;
+    }
+    .carousel-indicators {
+        left: 0;
+    }
+    .carousel-indicators li {
+        margin: 0 8px;
+        background-color: var(--white) !important;
+    }
+}
+
+/* ========================================
+    End Header Style  ==================*/
+
+/* ========================================
+    Srtart Services Style ==================*/
+.services {
+    background: #f1f1f1 url("../images/service/Group 115.png") no-repeat;
+    background-size: contain;
+}
+.services .service-card {
+    color: var(--white);
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.services .service-card.one {
+    background-image: url("../images/service/1.png");
+}
+.services .service-card.tow {
+    background-image: url("../images/service/2.png");
+}
+.services .service-card.three {
+    background-image: url("../images/service/3.png");
+}
+.services .service-card.four {
+    background-image: url("../images/service/4.png");
+}
+.services .service-card .icon {
+    height: 80px;
+    margin: 50px 0 30px;
+}
+.services .service-card .title-card {
+    margin: 5px 0;
+}
+.services .service-card .desc-card {
+    height: 50px;
+    font-size: 14px;
+    color: #f1f1f1cf;
+}
+.services .service-card .link-card {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 30px;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* ========================================
+    End Services Style  ==================*/
+
+/* ========================================
+    Srtart  Online Store Style ==================*/
+.store {
+    padding-bottom: 160px !important;
+}
+.store,
+.mobile-app {
+    background-image: url("../images/dash/Shape.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+.store .bg img,
+.mobile-app .bg img,
+.bg-about-t {
+    position: absolute;
+    width: 400px;
+    top: -70px;
+    right: 0;
+    z-index: 1;
+}
+.store .icons .icon-store {
+    position: relative;
+    z-index: 2;
+    background-image: url("../images/store/Path 249.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 150px;
+    line-height: 170px;
+    text-align: center;
+    transition: background-image 0.4s;
+    -webkit-transition: background-image 0.4s;
+    -moz-transition: background-image 0.4s;
+    -ms-transition: background-image 0.4s;
+    -o-transition: background-image 0.4s;
+}
+.store .icons .icon-store img {
+    width: 50px;
+}
+.store .icons a {
+    display: block;
+    color: var(--white);
+    font-weight: bold;
+    margin: 10px 0;
+}
+.store .icons:hover .icon-store,
+.store .icons.active .icon-store {
+    background-image: url("../images/store/Path 251.png");
+}
+.store .icons:hover a,
+.store .icons.active a {
+    color: #ffce3f;
+    text-decoration: none;
+}
+/* Dash */
+.dash.hidden {
+    display: none;
+}
+.dash .list img {
+    width: 30px;
+    margin-right: 20px;
+}
+.dash .list .title {
+    border-bottom: 4px solid var(--black);
+    display: inline-block;
+    font-size: 2.3em;
+    padding-bottom: 10px;
+}
+.dash .list li span {
+    color: var(--white);
+    font-size: 1.5em;
+}
+.dash .list li span img {
+    margin: 0 20px;
+    width: 10px;
+}
+.dash .img-store {
+    width: 100%;
+}
+@media (max-width: 992px) {
+    .store .bg img,
+    .mobile-app .bg img,
+    .bg-about-t {
+        position: absolute;
+        width: 300px;
+        top: -100px;
+        right: -40px;
+        z-index: 1;
+    }
+    .store .icons {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .store .icons a {
+        text-align: center;
+    }
+    .store .icons .icon-store {
+        width: 120px;
+        height: 102px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .store .icons .icon-store img {
+        width: 30px;
+    }
+    .dash .list li span {
+        font-size: 0.96em;
+    }
+}
+@media (max-width: 767px) {
+    .store .icons .icon-store {
+        width: 100px;
+    }
+    .store .icons .icon-store img {
+        width: 25px;
+        margin-left: 15px;
+    }
+}
+/* ========================================
+    End  Online Store Style  ==================*/
+
+/* ========================================
+    Srtart Websites Style ==================*/
+.websites {
+    position: relative;
+}
+.websites .bg {
+    position: absolute;
+    left: 0;
+    top: -230px;
+    z-index: -1;
+    width: 400px;
+}
+.websites .content-web {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.websites .box-web img {
+    width: 50px;
+    margin-left: 20px;
+}
+@media (max-width: 992px) {
+    .websites .bg {
+        left: 0px;
+        top: -200px;
+        width: 220px;
+    }
+}
+/* ========================================
+    End Websites Style  ==================*/
+/* ========================================
+    Srtart Mobile Apps  Style ==================*/
+.mobile-app .contant-app p {
+    margin-right: 20px;
+    color: var(--white);
+}
+.mobile-app .mob-apps {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+}
+@media (max-width: 992px) {
+    .mobile-app .mob-apps {
+        transform: translateY(-54px);
+        -webkit-transform: translateY(-54px);
+        -moz-transform: translateY(-54px);
+        -ms-transform: translateY(-54px);
+        -o-transform: translateY(-54px);
+    }
+}
+/* ========================================
+    End Mobile Apps  Style  ==================*/
+
+/* ========================================
+    Srtart Graphic Desgin Style ==================*/
+.graphic {
+    position: relative;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.graphic .content-graphic .bg-graphic {
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    height: 700px;
+    z-index: -1;
+}
+.graphic .content-graphic .icon-graphic {
+    width: 20px;
+}
+.graphic .content-graphic p {
+    margin: 0;
+}
+@media (max-width: 992px) {
+    .graphic .content-graphic .bg-graphic {
+        top: -77px;
+        left: 0px;
+        height: 481px;
+        width: 70%;
+    }
+}
+/* ========================================
+    End Graphic Desgin Style  ==================*/
+/* ========================================
+    Srtart Our Price Style ==================*/
+.price {
+    position: relative;
+}
+.price .bg-t,
+.price .bg-b {
+    position: absolute;
+    z-index: -1;
+    width: 400px;
+}
+.price .bg-t {
+    right: -50px;
+    top: -50px;
+}
+.price .bg-b {
+    left: 0;
+    bottom: -250px;
+}
+.price .price-box {
+    position: relative;
+    z-index: 4;
+    background: var(--white);
+    border: 1px solid var(--mainColor);
+    box-shadow: 0 0 2px 0 var(--mainColor);
+    padding: 40px 0;
+    min-height: 530px;
+    transform: scale(1);
+    transition: color 0.2s, transform 0.4s;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: color 0.2s, transform 0.4s;
+    -moz-transition: color 0.2s, transform 0.4s;
+    -ms-transition: color 0.2s, transform 0.4s;
+    -o-transition: color 0.2s, transform 0.4s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.price .price-box .title-price {
+    font-weight: bold;
+}
+.price .price-box .conut-price {
+    font-weight: bold;
+    color: var(--mainColor);
+    font-size: 2em;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+}
+.price .price-box .desc-pirce {
+    height: 60px;
+}
+.price .price-box .list-price li {
+    margin: 10px 0;
+}
+.price .price-box .list-price li img {
+    margin: 0 5px;
+}
+.price .price-box .link-price {
+    display: block;
+    width: 200px;
+    margin: auto;
+    border: 2px solid var(--mainColor);
+    background-color: transparent;
+    padding: 15px 25px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.price .price-box:hover {
+    background-image: url("../images/price/Rounded Rectangle 2.png");
+    color: var(--white);
+    transform: scale(1.1);
+    border: transparent;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.price .price-box:hover .link-price {
+    background-color: var(--white);
+    border: 2px solid transparent;
+}
+.price .price-box:hover .conut-price {
+    color: var(--white);
+}
+@media (max-width: 992px) {
+    .price .price-box:hover {
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -o-transform: scale(1.03);
+    }
+    .price .bg-t,
+    .price .bg-b {
+        width: 200px;
+    }
+    .price .bg-t {
+        right: -20px;
+        top: 20px;
+    }
+    .price .bg-b {
+        left: 0px;
+        bottom: -80px;
+    }
+}
+/* ========================================
+    End Our Price Style  ==================*/
+
+/* ========================================
+    Srtart About Us Style ==================*/
+.about {
+    position: relative;
+    z-index: 3;
+    background-image: url("../images/about/bg.png");
+    background-size: cover;
+    background-position: -100px 0;
+    height: 750px;
+}
+.about-slider {
+    position: relative;
+    z-index: 1;
+}
+.about-slider .fa-chevron-left,
+.about-slider .fa-chevron-right {
+    position: absolute;
+    top: 60%;
+    background-color: var(--mainColor);
+    cursor: pointer;
+    z-index: 9;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 var(--mainColor);
+    opacity: 0.5;
+    border-radius: 0%;
+    transform: translateY(-50%);
+    transition: opacity 0.4s, border-radius 0.4s;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: opacity 0.4s, border-radius 0.4s;
+    -moz-transition: opacity 0.4s, border-radius 0.4s;
+    -ms-transition: opacity 0.4s, border-radius 0.4s;
+    -o-transition: opacity 0.4s, border-radius 0.4s;
+}
+.about-slider .fa-chevron-right {
+    right: 20px;
+}
+.about-slider .fa-chevron-left {
+    left: 20px;
+}
+.about-slider .fa-chevron-left:hover,
+.about-slider .fa-chevron-right:hover {
+    opacity: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.about .content-about {
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid var(--white);
+}
+.about .content-about .head {
+    position: relative;
+}
+.about .content-about .head h5,
+.about .content-about .head h6 {
+    color: var(--white);
+}
+.about .content-about img {
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.about .content-about .head::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: var(--white);
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: -1;
+}
+@media (max-width: 992px) {
+    .about {
+        background-image: url("../images/about/bg.png");
+        background-size: cover;
+        background-position: -480px 0;
+    }
+}
+@media (max-width: 767px) {
+    .about {
+        background-position: -663px 0;
+    }
+}
+/* ========================================
+    End About Us Style  ==================*/
+
+/* ========================================
+    Srtart  Our Works Style ==================*/
+.works {
+    top: -75px;
+    position: relative;
+    z-index: 3;
+}
+.works .img-box {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 0 10px 0 #8888;
+    margin: 50px auto 5px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: border-radius 0.4s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    -webkit-transition: border-radius 0.4s;
+    -moz-transition: border-radius 0.4s;
+    -ms-transition: border-radius 0.4s;
+    -o-transition: border-radius 0.4s;
+}
+.works .img-box:hover {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.work-slider img {
+    width: 100%;
+}
+.slick-slide {
+    outline: none;
+}
+/* ========================================
+    End  Our Works Style  ==================*/
+
+/* ========================================
+    Srtart Contact US Style ==================*/
+.contact .info-contact {
+    background: url("../images/contact/Rectangle\ 36.png");
+    background-size: 100% 100%;
+    padding: 40px 30px;
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    z-index: 1;
+}
+.contact form {
+    border-left: 3px solid var(--white);
+    padding-left: 25px;
+}
+form textarea {
+    resize: none;
+}
+.contact form textarea::placeholder,
+.contact form input::placeholder {
+    color: var(--white);
+}
+.contact form textarea,
+.contact form input,
+.modal form input,
+.modal form textarea {
+    background: transparent;
+    outline: none;
+    padding: 10px 20px;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.contact form button,
+.modal form button {
+    background-color: #ffce3f;
+    color: var(--black);
+    width: 150px;
+    padding: 15px !important;
+}
+.modal form button {
+    border: 1px solid #ffce3f;
+}
+.contact form button:hover,
+.modal form button:hover {
+    background-color: var(--white);
+}
+.contact .content .contact-img {
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    z-index: -1;
+    text-align: left;
+    width: 50%;
+}
+.contact .content .bg-contact {
+    width: 100%;
+}
+.contact .content .box img {
+    width: 20px;
+}
+.contact .content .box span {
+    color: var(--white);
+}
+@media (max-width: 992px) {
+    .contact form {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+/* ========================================
+    End Contact US Style  ==================*/
+
+/* ========================================
+    Srtart Footer Style ==================*/
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+footer .list-footer {
+    height: 100%;
+    align-items: center;
+}
+footer .list-footer li {
+    margin-left: 30px;
+}
+footer .list-footer li i {
+    color: var(--white);
+    font-size: 25px;
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+}
+footer .list-footer li i:hover {
+    color: #85e6fe;
+}
+footer .logo img {
+    width: 90px;
+    margin-right: 20px;
+}
+@media (max-width: 992px) {
+    footer .list-footer {
+        justify-content: space-between;
+    }
+    footer .list-footer li {
+        margin-left: 0;
+    }
+}
+/* ========================================
+    End Footer Style  ==================*/
